@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   
+
+   <title>calendar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fa fa-angle-left prev"></i>
+                    <div class="date">June 2023</div>
+                    <i class="fa fa-angle-right next"></i>
+                </div>
+                <div class="weekday">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+               
+                </div>
+                <div class="gotoday">
+                    <!-- <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="datein">
+                        <button class="gotobtn">go</button>
+                    </div> -->
+                    <button class="gotodaybtn">today</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="todaydate">
+                <div class="eventday">Thursday</div>
+                <div class="eventdate">29 june 2023</div>
+            </div>
+            <div class="events">
+                <!-- <div class="event">
+                    <div class="title">
+                        <i class="fas fa-circle"></i>
+                        <h3 class="eventtitle">
+                            Event1
+                        </h3>
+                    </div>
+                    <div class="time">
+                        10:00 AM - 12:00 PM
+                    </div>
+                    <i class="fas fa-times close remove"></i>
+                </div>  -->
+                <!-- <div class="event">
+                    <div class="title">
+                        <i class="fas fa-circle"></i>
+                        <h3 class="eventtitle">
+                            Event1
+                        </h3>
+                    </div>
+                    <div class="time">
+                        10:00 AM - 12:00 PM
+                    </div>
+                </div>  -->
+                <!-- <div class="noevent">
+                    <h3>No Events</h3>
+                </div> -->
+            </div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Add Event</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event name" class="name">
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="From" class="from">
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="To" class="to">
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="addbtn">Add Event</button>
+                </div>
+            </div>
+        </div>
+        <button class="addevent">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
